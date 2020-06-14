@@ -1,0 +1,13 @@
+<mat-toolbar color="accent">
+  <mat-toolbar-row>
+    <span>Current Offers</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="body">
+  <div class="dashboard">
+    <app-ticker [currencies]="'BTC, USD, ETH'"></app-ticker>
+    <app-ticker [currencies]="'BTC'"></app-ticker>
+    <app-ticker [currencies]="'ETH'"></app-ticker>
+    <app-ticker [currencies]="'USD'"></app-ticker>
+  </div>
+</div>

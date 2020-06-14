@@ -1,0 +1,20 @@
+<app-dashboard-widget>
+  <mat-card>
+    <mat-card-title>{{currencies}}</mat-card-title>
+    <mat-card-content>
+      <div class="stats">
+      <mat-list-item role="listitem">Latest: {{ ticks$ | async }}</mat-list-item>
+        <div class="spacer" *ngIf="tickData.tickers.length > 1 ">&nbsp;</div>
+        <ng-container *ngIf="tickData.tickers.length === 1 ">
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item role="listitem">High: {{tickData.tickers[0].high}}</mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item role="listitem">Low: {{tickData.tickers[0].low}}</mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item role="listitem">Open: {{tickData.tickers[0].open}}</mat-list-item>
+        </ng-container>
+      </div>
+      <app-line-chart [chartLabels]="tickData.tickLabels" [chartData]="tickData.tickers"></app-line-chart>
+    </mat-card-content>
+  </mat-card>
+</app-dashboard-widget>

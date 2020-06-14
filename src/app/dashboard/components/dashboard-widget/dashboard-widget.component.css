@@ -1,0 +1,14 @@
+
+.widget {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin: 20px;
+}
+
+@media(max-width: 500px) {
+  .widget {
+    width: 100%;
+    margin: 20px 0px;
+  }
+}
