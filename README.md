@@ -1,8 +1,19 @@
 # StardashApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+This is a little Angular dashboard app to demo GraphQL queries over WebSocket. 
+The app makes use of a backend Astrograph server to access the Stellar ledger via GraphQL:
+https://github.com/astroband/astrograph
 
 ## Development server
+The development server proxies GraphQL requests to https://astrograph.evilmartians.io
+
+To run a local astrograph server (recommended!):
+* Checkout out the astrograph source and run in Docker. 
+* Replace the content of proxy configuration file "./src/proxy.conf.json", with the content of the local config file "./src/proxy.conf.local.json"
+
+The app will then proxy GraphQL connections to the astrograph server at localhost:4000.
+
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
