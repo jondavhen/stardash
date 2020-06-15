@@ -1,0 +1,12 @@
+{
+  "/api": {
+    "target": "https://astrograph.evilmartians.io",
+    "secure": true,
+    "changeOrigin": true,
+    "ws": true,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "logLevel": "debug"
+  }
+}
