@@ -12,3 +12,4 @@ export class DashboardWidgetComponent implements OnInit {
   ngOnInit(): void {}
 
 }
+

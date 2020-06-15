@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUri: 'ws://localhost:4200/api/graphql',
+  apiUri: 'ws://www.movingroot.com:4000/graphql',
   tickerCurrencyCodes: [
     'USD-GDUKMGUGDZQK6YHYA5Z6AY2G4XDSZPSZ3SW5UN3ARVMO6QSRDWP5YLEX',
     'ETH-GBDEVU63Y6NTHJQQZIKVTC23NWLQVP3WJ2RI2OTSJTNYOIGICST6DUXR',
