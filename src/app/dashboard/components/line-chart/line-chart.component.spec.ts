@@ -9,7 +9,7 @@ describe('LineChartComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ LineChartComponent ]
-    }).overrideTemplate(LineChartComponent, "")
+    }).overrideTemplate(LineChartComponent, '')
     .compileComponents();
   }));
 

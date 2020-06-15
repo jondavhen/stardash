@@ -1,12 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 
 import { TickService } from './tick.service';
+import {ApolloTestingModule} from 'apollo-angular/testing';
 
 describe('TickService', () => {
   let service: TickService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [ApolloTestingModule]
+    });
     service = TestBed.inject(TickService);
   });
 

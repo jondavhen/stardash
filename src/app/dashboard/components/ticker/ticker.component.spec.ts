@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TickerComponent } from './ticker.component';
-import {LineChartComponent} from "../line-chart/line-chart.component";
+import {ApolloTestingModule} from 'apollo-angular/testing';
 
 describe('TickerComponent', () => {
   let component: TickerComponent;
@@ -9,8 +9,9 @@ describe('TickerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ApolloTestingModule],
       declarations: [ TickerComponent ]
-    }).overrideTemplate(TickerComponent, "")
+    }).overrideTemplate(TickerComponent, '')
     .compileComponents();
   }));
 
