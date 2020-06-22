@@ -4,8 +4,6 @@ This is a little Angular dashboard app to demo GraphQL queries over WebSocket.
 The app makes use of a backend Astrograph server to access the Stellar ledger via GraphQL:
 https://github.com/astroband/astrograph
 
-[Live Demo](http://www.movingroot.com/stardash/)
-
 ## Development server
 The development server proxies GraphQL requests to https://astrograph.evilmartians.io
 
