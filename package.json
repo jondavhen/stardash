@@ -27,7 +27,7 @@
     "apollo-client": "^2.6.0",
     "apollo-link": "^1.2.11",
     "apollo-link-ws": "^1.0.20",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.0",
     "ng2-charts": "^2.3.2",
